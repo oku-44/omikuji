@@ -1,9 +1,6 @@
 export default function Nav() {
 	return (
-		<div className="bg-white sticky top-0 z-10 flex items-center px-4 py-4 space-x-10 shadow-md">
-			<div className=''>
-			</div>
-			<div className='flex flex-1 items-center justify-center px-2 sm:absolute sm:inset-0'>
+		<div className="flex justify-center items-center py-4 bg-white sticky top-0 z-10 space-x-1">
 				<a href="/">
 					<span className="sr-only">omikuji</span>
 					<img
@@ -18,7 +15,6 @@ export default function Nav() {
 				<img
 					className='https://www27.a8.net/svt/bgt?aid=221230030654&wid=001&eno=01&mid=s00000008903001080000&mc=1'
 				/>
-			</div>
 
 		</div>
 	)
