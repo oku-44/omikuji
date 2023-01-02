@@ -19,7 +19,7 @@ export default function Modal({ show, setShow, children }) {
 							</div>
 							<div className="mt-2">
 								<p className="text-sm text-gray-500">
-									大吉！！
+									大吉！！<br />
 									あなたは今年1年ハッピーに過ごせます！
 									あああ
 								</p>
