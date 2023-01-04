@@ -1,6 +1,5 @@
-import { HandThumbUpIcon } from '@heroicons/react/24/outline'
-
-export default function Modal({ show, setShow, children }) {
+import { HandThumbUpIcon, ArrowPathIcon } from '@heroicons/react/24/outline'
+export default function Modal({ show, setShow, result }) {
 	const closeModal = () => {
 	  setShow(false);
 	};
@@ -14,25 +13,25 @@ export default function Modal({ show, setShow, children }) {
 							<HandThumbUpIcon className="h-6 w-6 text-white" aria-hidden="true" />
 						</div>
 						<div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
-							<div as="h3" className="text-lg font-medium leading-6 text-gray-900">
+							<h3 className="text-lg font-medium leading-6 text-gray-900">
 								結果は...
-							</div>
+							</h3>
 							<div className="mt-2">
 								<p className="text-sm text-gray-500">
-									大吉！！<br />
-									あなたは今年1年ハッピーに過ごせます！
-									あああ
+									{result}<br />
+									<br />
+									今年も素敵な1年になりますうように！
 								</p>
 							</div>
 						</div>
 					</div>
-					<div className="mt-5 sm:mt-4 sm:ml-10 sm:pl-4">
+					<div className="flex justify-center mt-5 sm:mt-4 sm:ml-10 sm:pl-4">
 						<button
 							type="button"
-							className="items-end rounded-md border border-transparent bg-red-500 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 sm:w-auto sm:text-sm"
+							className="flex items-center rounded-md border border-transparent bg-red-500 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 sm:w-auto sm:text-sm"
 							onClick={() => setShow(false)}
 						>
-						やり直す
+						リトライする<ArrowPathIcon className='h-4 w-4 ml-2 text-white'/>
 						</button>
 					</div>
 				</div>
