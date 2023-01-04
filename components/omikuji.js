@@ -6,10 +6,10 @@ export default function Omikuji() {
 	const [result, setResult] = useState();
 	const onClickResult = () => {
 		let arr = [
-			{id:1, name:"大吉", description:"今年の運勢は最高です！"},
-			{id:2, name:"中吉", description:"今年の運勢はとても良さそうです！"},
-			{id:3, name:"吉", description:"今年の運勢は悪くありません！"},
-			{id:4, name:"凶", description:"今年の運勢は良く無いかも...です"},
+			{name:"大吉", description:"今年の運勢は最高です！"},
+			{name:"中吉", description:"今年の運勢はとても良さそうです！"},
+			{name:"吉", description:"今年の運勢は悪くありません！"},
+			{name:"凶", description:"今年の運勢は良く無いかも...です"},
 		];
 		let index = Math.floor(Math.random() * arr.length);
 		setResult(arr[index]);
