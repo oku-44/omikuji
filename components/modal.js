@@ -16,11 +16,10 @@ export default function Modal({ show, setShow, result }) {
 							<h3 className="text-lg font-medium leading-6 text-gray-900">
 								結果は...
 							</h3>
-							<div className="mt-2">
+							<div className="m-4">
+								<p className='my-2 text-emerald-500'>{result.name}</p>
 								<p className="text-sm text-gray-500">
-									{result}<br />
-									<br />
-									今年も素敵な1年になりますうように！
+									{result.description}
 								</p>
 							</div>
 						</div>

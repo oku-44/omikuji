@@ -3,9 +3,14 @@ import Modal from './modal'
 
 export default function Omikuji() {
 	const [show, setShow] = useState(false);
-	const [result, setResult] = useState("おみくじ");
+	const [result, setResult] = useState();
 	const onClickResult = () => {
-		let arr = ["大吉</br>", "小吉", "中吉", "吉", "凶", "大凶"];
+		let arr = [
+			{id:1, name:"大吉", description:"今年の運勢は最高です！"},
+			{id:2, name:"中吉", description:"今年の運勢はとても良さそうです！"},
+			{id:3, name:"吉", description:"今年の運勢は悪くありません！"},
+			{id:4, name:"凶", description:"今年の運勢は良く無いかも...です"},
+		];
 		let index = Math.floor(Math.random() * arr.length);
 		setResult(arr[index]);
 	  };
@@ -33,7 +38,6 @@ export default function Omikuji() {
 			}())
 			}
 			<Modal show={show} setShow={setShow} result={result}>
-
 			</Modal>
 		</div>
 	)
